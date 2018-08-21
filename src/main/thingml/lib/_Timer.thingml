@@ -1,0 +1,9 @@
+import "datatypes.thingml" from stl
+
+thing fragment TimerMsgs {
+	message timer_start(id : UInt8, time : UInt32)
+	message timer_cancel(id : UInt8)
+	message timer_timeout(id : UInt8)
+}
+
+protocol Timer
